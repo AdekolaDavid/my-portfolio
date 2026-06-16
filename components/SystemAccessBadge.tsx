@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import profilePic from "@/public/laptop-image-2.jpg";
+// 1. Import both theme variants
+import moshedDark from "@/public/moshed-glitch.gif";
+import moshedLight from "@/public/glitch-white.gif";
 
 export default function SystemAccessBadge() {
   return (
@@ -22,17 +24,27 @@ export default function SystemAccessBadge() {
           {/* Top Section: Photo and Biometric */}
           <div className="grid grid-cols-2 gap-4 items-center mb-6 w-full">
             
-            {/* 1. PHOTO Implementation with filter */}
+            {/* 1. PHOTO Implementation with dual-theme glitch */}
             <div className="relative aspect-square border-2 border-black dark:border-white bg-slate-100 dark:bg-slate-900 overflow-hidden shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#fff]">
-            <Image 
-                src={profilePic}
-                alt="Adekola David Profile"
-                className="object-cover w-full h-full" 
-                placeholder="blur" 
-             />
+              
+              {/* LIGHT THEME GIF (Visible by default, hidden in dark mode) */}
+              <Image 
+                src={moshedLight}
+                alt="Adekola David Profile Glitch Light"
+                className="object-cover w-full h-full block dark:hidden" 
+                unoptimized
+              />
+
+              {/* DARK THEME GIF (Hidden by default, visible in dark mode) */}
+              <Image 
+                src={moshedDark}
+                alt="Adekola David Profile Glitch Dark"
+                className="object-cover w-full h-full hidden dark:block" 
+                unoptimized
+              />
+              
             </div>
 
-            
             <div className="flex flex-col items-center gap-3">
               {/* Fingerprint Icon Placeholder */}
               <div className="w-14 h-14 text-slate-300 dark:text-slate-700 transition-colors">
