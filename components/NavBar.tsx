@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { ThemeToggle } from "./CurtainThemeToggle"; // Adjust path if needed
+import Link from "next/link"; 
+import { ThemeToggle } from "./CurtainThemeToggle"; 
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,6 +22,15 @@ export default function NavBar() {
           <a href="#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">/about</a>
           <a href="#projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">/projects</a>
           <a href="#contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">/contact</a>
+          {/* Direct PDF Link */}
+          <a 
+            href="/adekola-david-cv.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            /resume
+          </a>
         </div>
         
         <div className="flex items-center gap-4">
@@ -74,6 +84,16 @@ export default function NavBar() {
             className="p-4 border-2 border-black dark:border-white/30 bg-slate-50 dark:bg-white/5 active:bg-blue-100 dark:active:bg-blue-900/30 transition-colors"
           >
             /contact
+          </a>
+          {/* Direct Mobile PDF Link */}
+          <a 
+            href="/adekola-david-cv.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="p-4 border-2 border-black dark:border-white/30 bg-slate-50 dark:bg-white/5 active:bg-blue-100 dark:active:bg-blue-900/30 transition-colors text-blue-600 dark:text-blue-400"
+          >
+            /resume
           </a>
         </div>
       </div>
