@@ -85,7 +85,7 @@ export default function Home() {
             <div className="flex-1 border-2 border-black dark:border-white/30 bg-blue-600 dark:bg-blue-900 shadow-[6px_6px_0px_#000] dark:shadow-[6px_6px_0px_#2563eb] p-6 transition-all flex flex-col justify-between min-h-[120px] text-white">
                <span className="font-[family-name:var(--font-mono)] font-bold text-[10px] text-blue-200 uppercase">LATEST.DEPLOYMENT</span>
                <div className="mt-2">
-                 <h4 className="text-xl font-black text-white">Company Tickets</h4>
+                 <h4 className="text-xl font-black text-white">SimTrackr</h4>
                  <p className="text-xs font-[family-name:var(--font-mono)] font-bold text-blue-200 mt-1">v2.1.0 // SECURE</p>
                </div>
             </div>

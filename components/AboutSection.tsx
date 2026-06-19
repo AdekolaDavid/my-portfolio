@@ -55,7 +55,7 @@ export default function AboutSection() {
                I'm a software developer with <span className="font-bold text-black dark:text-white bg-blue-200 dark:bg-blue-900/40 px-1.5 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb]">4+ years of experience</span> building web applications and tools that solve real problems. I work across the stack — from crafting intuitive, responsive frontends to wiring up backends, integrating third-party APIs, and embedding AI-powered features into products people actually use.
              </p>
              <p>
-               Currently, I'm building <span className="font-black text-blue-700 dark:text-blue-400 tracking-tight">SimTrackr</span>, a mobile app that uses AI vision to automatically extract and track mobile subscription details from uploaded images. It's a good snapshot of how I approach problems — find the friction, cut it, and build something clean in its place.
+               Recently, I built <span className="font-black text-blue-700 dark:text-blue-400 tracking-tight">SimTrackr</span>, a mobile app that uses AI vision to automatically extract and track mobile subscription details from uploaded receipt images. It's a good snapshot of how I approach problems — find the friction, cut it, and build something clean in its place.
              </p>
              <p>
                I'm comfortable working with modern web technologies, RESTful APIs, and AI/ML integrations. I enjoy the full arc of a project — from the first rough idea to a polished, working product. I care about clean code, thoughtful UX, and building things that hold up beyond the demo.
