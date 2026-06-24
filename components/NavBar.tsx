@@ -31,6 +31,13 @@ export default function NavBar() {
           >
             /resume
           </a>
+          {/* STATUS INDICATOR*/}
+           <div className="hidden md:flex items-center gap-2 border-2 border-black dark:border-white/30 px-3 py-1 bg-slate-50 dark:bg-[#0f0f0f] shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb]">
+           <div className="w-2.5 h-3 bg-green-500 animate-pulse"></div>
+           <span className="font-[family-name:var(--font-mono)] text-[10px] font-black uppercase tracking-widest text-black dark:text-white">
+             System Online: Open to Opportunities
+           </span>
+          </div>
         </div>
         
         <div className="flex items-center gap-4">
