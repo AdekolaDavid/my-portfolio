@@ -1,18 +1,76 @@
-import type { Metadata } from "next";
-// 1. Import the font from Google Fonts
-import { Space_Mono } from "next/font/google"; 
+import type { Metadata, Viewport } from "next";
+// 1. Import the fonts from Google Fonts
+import { Space_Mono, JetBrains_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-// 2. Configure the font and define the CSS variable
+// 2. Configure the fonts and define the CSS variables
 const spaceMono = Space_Mono({
   variable: "--font-space",
   subsets: ["latin"],
   weight: ["400", "700"], // Bringing in regular and bold weights
 });
 
+// Terminal-style UI text (nav links, labels, tags, badges) — small sizes
+// need a mono built for readability at 10-12px, not a display face.
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+// Italic serif accent word in the hero ("Operations", "Systems", ...) —
+// the one deliberate contrast note against all the mono/grotesk everywhere else.
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  style: ["italic", "normal"],
+});
+
+const siteUrl = "https://adekola-david.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Adekola David | Full Stack Developer",
-  description: "Adekola David's Portfolio",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Adekola David | Full Stack Developer",
+    template: "%s | Adekola David",
+  },
+  description:
+    "Full stack developer with 4+ years building web and mobile products — Next.js, React, Flutter, Supabase, and AI-powered features that solve real workflow problems.",
+  keywords: [
+    "Adekola David",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Flutter Developer",
+    "Lagos Nigeria Developer",
+  ],
+  authors: [{ name: "Adekola David" }],
+  creator: "Adekola David",
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Adekola David | Full Stack Developer",
+    title: "Adekola David | Full Stack Developer",
+    description:
+      "Full stack developer with 4+ years building web and mobile products — Next.js, React, Flutter, Supabase, and AI-powered features that solve real workflow problems.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adekola David | Full Stack Developer",
+    description:
+      "Full stack developer with 4+ years building web and mobile products — Next.js, React, Flutter, Supabase, and AI-powered features that solve real workflow problems.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#050505",
 };
 
 export default function RootLayout({
@@ -21,10 +79,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // 1. Added "dark" to the className
-    // 2. Added style={{ colorScheme: "dark" }} to force the browser's native scrollbars/UI into dark mode instantly
-    <html lang="en" className="scroll-smooth dark" style={{ colorScheme: "dark" }}>
-      <body className={`${spaceMono.variable} antialiased bg-[#050505]`}>
+    // "dark" is hardcoded here as the initial class; CurtainThemeToggle flips it client-side.
+    <html lang="en" className="scroll-smooth dark">
+      <body
+        className={`${spaceMono.variable} ${jetbrainsMono.variable} ${playfairDisplay.variable} antialiased bg-[#050505]`}
+      >
         {children}
       </body>
     </html>
