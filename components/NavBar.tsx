@@ -47,7 +47,7 @@ export default function NavBar() {
 
           {/* Mobile Menu Toggle Button */}
           <button 
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 border-2 border-black dark:border-white/30 bg-slate-100 dark:bg-white/5 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all"
+            className="md:hidden flex flex-col justify-center items-center w-10 h-10 border-2 border-black dark:border-white/30 bg-slate-100 dark:bg-white/5 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-[transform,box-shadow]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -61,7 +61,7 @@ export default function NavBar() {
 
       {/* Mobile Dropdown Menu (Brutalist Style) */}
       <div 
-        className={`md:hidden absolute top-full left-0 w-full bg-white dark:bg-[#050505] border-b-2 border-black dark:border-white/30 transition-all duration-300 origin-top overflow-hidden shadow-[0_8px_0_#000] dark:shadow-[0_8px_0_#2563eb] ${isMobileMenuOpen ? "scale-y-100 opacity-100 border-t-2" : "scale-y-0 opacity-0 h-0"}`}
+        className={`md:hidden absolute top-full left-0 w-full bg-white dark:bg-[#050505] border-b-2 border-black dark:border-white/30 transition-[transform,opacity] duration-300 origin-top overflow-hidden shadow-[0_8px_0_#000] dark:shadow-[0_8px_0_#2563eb] ${isMobileMenuOpen ? "scale-y-100 opacity-100 border-t-2" : "scale-y-0 opacity-0 h-0"}`}
       >
         <div className="flex flex-col font-[family-name:var(--font-mono)] text-sm font-bold text-black dark:text-white uppercase tracking-widest p-4 gap-4">
           <a 

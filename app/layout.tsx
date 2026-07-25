@@ -1,13 +1,11 @@
 import type { Metadata, Viewport } from "next";
-// 1. Import the fonts from Google Fonts
 import { Space_Mono, JetBrains_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-// 2. Configure the fonts and define the CSS variables
 const spaceMono = Space_Mono({
   variable: "--font-space",
   subsets: ["latin"],
-  weight: ["400", "700"], // Bringing in regular and bold weights
+  weight: ["400", "700"],
 });
 
 // Terminal-style UI text (nav links, labels, tags, badges) — small sizes

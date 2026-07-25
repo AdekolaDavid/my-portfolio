@@ -45,7 +45,7 @@ export default function ContactFooter() {
           target="_blank"
           rel="noopener noreferrer"
           
-          className={`group flex items-center flex-1 w-full lg:w-[80px] lg:hover:w-full min-h-[72px] bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-white/30 shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#2563eb] transition-all duration-300 ease-out overflow-hidden px-6 gap-6 text-slate-600 dark:text-slate-400 ${social.hoverStyle}`}
+          className={`group flex items-center flex-1 w-full lg:w-[80px] lg:hover:w-full min-h-[72px] bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-white/30 shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#2563eb] transition-[width,background-color,border-color,box-shadow] duration-300 ease-out overflow-hidden px-6 gap-6 text-slate-600 dark:text-slate-400 ${social.hoverStyle}`}
         >
           <div className="shrink-0 flex items-center justify-center">
             {social.icon}

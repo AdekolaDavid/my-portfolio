@@ -64,7 +64,7 @@ export default function ContactForm() {
             name="name"
             required
             placeholder="John Doe"
-            className="w-full p-3 bg-slate-50 dark:bg-[#050505] border-2 border-black dark:border-white/20 text-black dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:shadow-[4px_4px_0px_#2563eb] transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 font-[family-name:var(--font-mono)]"
+            className="w-full p-3 bg-slate-50 dark:bg-[#050505] border-2 border-black dark:border-white/20 text-black dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:shadow-[4px_4px_0px_#2563eb] transition-[border-color,box-shadow] placeholder:text-slate-400 dark:placeholder:text-slate-600 font-[family-name:var(--font-mono)]"
           />
         </div>
 
@@ -78,7 +78,7 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="you@protocol.com"
-            className="w-full p-3 bg-slate-50 dark:bg-[#050505] border-2 border-black dark:border-white/20 text-black dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:shadow-[4px_4px_0px_#2563eb] transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 font-[family-name:var(--font-mono)]"
+            className="w-full p-3 bg-slate-50 dark:bg-[#050505] border-2 border-black dark:border-white/20 text-black dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:shadow-[4px_4px_0px_#2563eb] transition-[border-color,box-shadow] placeholder:text-slate-400 dark:placeholder:text-slate-600 font-[family-name:var(--font-mono)]"
           />
         </div>
 
@@ -92,14 +92,14 @@ export default function ContactForm() {
             required
             rows={5}
             placeholder="Initialize transmission..."
-            className="w-full p-3 bg-slate-50 dark:bg-[#050505] border-2 border-black dark:border-white/20 text-black dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:shadow-[4px_4px_0px_#2563eb] transition-all placeholder:text-slate-400 dark:placeholder:text-slate-600 font-[family-name:var(--font-mono)] resize-none"
+            className="w-full p-3 bg-slate-50 dark:bg-[#050505] border-2 border-black dark:border-white/20 text-black dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:shadow-[4px_4px_0px_#2563eb] transition-[border-color,box-shadow] placeholder:text-slate-400 dark:placeholder:text-slate-600 font-[family-name:var(--font-mono)] resize-none"
           />
         </div>
 
         <button 
           type="submit"
           disabled={isSubmitting}
-          className="mt-4 w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest border-2 border-black dark:border-transparent shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#fff] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          className="mt-4 w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest border-2 border-black dark:border-transparent shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#fff] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-[background-color,box-shadow,transform] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? "Transmitting..." : "Send_Message"}
         </button>

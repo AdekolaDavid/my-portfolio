@@ -9,7 +9,7 @@ export default function GlassCard({ title, description, techStack, delay = 0, im
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: delay }}
-      className="group relative border-2 border-black dark:border-white/30 bg-white dark:bg-[#0a0a0a] shadow-[8px_8px_0px_#000] dark:shadow-[8px_8px_0px_#2563eb] hover:-translate-y-1 hover:shadow-[12px_12px_0px_#000] dark:hover:shadow-[12px_12px_0px_#2563eb] transition-all duration-300 overflow-hidden flex flex-col h-full rounded-none"
+      className="group relative border-2 border-black dark:border-white/30 bg-white dark:bg-[#0a0a0a] shadow-[8px_8px_0px_#000] dark:shadow-[8px_8px_0px_#2563eb] hover:-translate-y-1 hover:shadow-[12px_12px_0px_#000] dark:hover:shadow-[12px_12px_0px_#2563eb] transition-[transform,box-shadow] duration-300 overflow-hidden flex flex-col h-full rounded-none"
     >
       <div className="w-full px-4 py-2 bg-black/5 dark:bg-white/5 border-b-2 border-black dark:border-white/30 flex items-center justify-between transition-colors">
          <div className="flex items-center gap-2">
@@ -26,7 +26,7 @@ export default function GlassCard({ title, description, techStack, delay = 0, im
             src={imagePath} 
             alt={title} 
             fill 
-            className="object-cover object-top opacity-80 group-hover:opacity-100 transition-all duration-500 filter grayscale group-hover:grayscale-0" 
+            className="object-cover object-top opacity-80 group-hover:opacity-100 transition-[opacity,filter] duration-500 filter grayscale group-hover:grayscale-0" 
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
@@ -38,7 +38,7 @@ export default function GlassCard({ title, description, techStack, delay = 0, im
         
         <div className="flex flex-wrap gap-2 mt-auto">
           {techStack.map((tech: string) => (
-            <span key={tech} className="px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-black dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 border-2 border-black dark:border-blue-500 font-[family-name:var(--font-mono)] shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] transition-all">
+            <span key={tech} className="px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-black dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 border-2 border-black dark:border-blue-500 font-[family-name:var(--font-mono)] shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] transition-[background-color,border-color,box-shadow] duration-300">
               {tech}
             </span>
           ))}

@@ -10,7 +10,7 @@ export default function SystemAccessBadge() {
     <div className="w-full flex flex-col items-center gap-6 mt-12 mb-8 relative z-10">
       
       {/* The main plastic badge body */}
-      <div className="w-full max-w-[340px] aspect-[1/1.4] border-4 border-black dark:border-white bg-white dark:bg-[#0f0f0f] shadow-[12px_12px_0px_#000] dark:shadow-[12px_12px_0px_#2563eb] p-6 relative overflow-hidden transition-all duration-500">
+      <div className="w-full max-w-[340px] aspect-[1/1.4] border-4 border-black dark:border-white bg-white dark:bg-[#0f0f0f] shadow-[12px_12px_0px_#000] dark:shadow-[12px_12px_0px_#2563eb] p-6 relative overflow-hidden transition-[background-color,border-color,box-shadow] duration-500">
         
         {/* Terminal Header Bar */}
         <div className="absolute top-0 left-0 w-full px-4 py-1.5 bg-black/5 dark:bg-white/5 border-b-2 border-black dark:border-white/30 flex items-center justify-between z-20 transition-colors">

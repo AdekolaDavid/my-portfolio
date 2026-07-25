@@ -33,7 +33,7 @@ export default function AboutSection() {
               alt="Author Profile"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover filter grayscale contrast-125 opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+              className="object-cover filter grayscale contrast-125 opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-[opacity,filter] duration-500"
             />
           </div>
           
@@ -43,7 +43,7 @@ export default function AboutSection() {
         </div>
 
         {/* WRITE-UP COLUMN (7 Columns) */}
-        <div className="md:col-span-7 border-2 border-black dark:border-white/30 bg-white dark:bg-[#0a0a0a] shadow-[8px_8px_0px_#000] dark:shadow-[8px_8px_0px_#2563eb] p-8 md:p-12 flex flex-col justify-center relative overflow-hidden transition-all hover:-translate-y-1 hover:shadow-[12px_12px_0px_#000] dark:hover:shadow-[12px_12px_0px_#2563eb] duration-300">
+        <div className="md:col-span-7 border-2 border-black dark:border-white/30 bg-white dark:bg-[#0a0a0a] shadow-[8px_8px_0px_#000] dark:shadow-[8px_8px_0px_#2563eb] p-8 md:p-12 flex flex-col justify-center relative overflow-hidden transition-[background-color,border-color,transform,box-shadow] hover:-translate-y-1 hover:shadow-[12px_12px_0px_#000] dark:hover:shadow-[12px_12px_0px_#2563eb] duration-300">
            
            {/* Faded Background Watermark */}
            <div className="absolute top-4 right-4 font-[family-name:var(--font-mono)] text-black/[0.03] dark:text-white/[0.02] text-8xl font-black pointer-events-none select-none">

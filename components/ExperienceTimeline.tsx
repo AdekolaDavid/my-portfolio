@@ -54,9 +54,9 @@ export default function ExperienceTimeline() {
             <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-blue-500 border-2 border-black dark:border-white -translate-x-1/2 mt-6 md:mt-0 z-20 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#fff]"></div>
 
             <div className={`w-full md:w-1/2 pl-16 md:pl-0 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 text-left'}`}>
-              <div className="p-6 md:p-8 bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-white/30 shadow-[6px_6px_0px_#000] dark:shadow-[6px_6px_0px_#2563eb] transition-all hover:-translate-y-1 hover:shadow-[10px_10px_0px_#000] dark:hover:shadow-[10px_10px_0px_#2563eb] group relative">
+              <div className="p-6 md:p-8 bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-white/30 shadow-[6px_6px_0px_#000] dark:shadow-[6px_6px_0px_#2563eb] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[10px_10px_0px_#000] dark:hover:shadow-[10px_10px_0px_#2563eb] group relative">
                 
-                <span className="text-[10px] font-bold font-[family-name:var(--font-mono)] tracking-widest text-black dark:text-blue-400 mb-4 inline-block bg-blue-100 dark:bg-blue-900/30 px-2 py-1 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] uppercase transition-all">
+                <span className="text-[10px] font-bold font-[family-name:var(--font-mono)] tracking-widest text-black dark:text-blue-400 mb-4 inline-block bg-blue-100 dark:bg-blue-900/30 px-2 py-1 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] uppercase transition-[background-color,border-color,box-shadow] duration-300">
                   [{exp.date}]
                 </span>
                 <h3 className="text-xl font-black text-black dark:text-white mb-2 transition-colors">{exp.role}</h3>

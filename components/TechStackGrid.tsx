@@ -74,7 +74,7 @@ export default function TechStackGrid() {
           {stack.map((tech, index) => (
             <div 
               key={index}
-              className="w-[140px] md:w-[160px] relative flex items-center gap-3 p-3 bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-white/30 shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#2563eb] hover:-translate-y-1 hover:translate-x-1 hover:shadow-none dark:hover:shadow-none transition-all cursor-crosshair shrink-0"
+              className="w-[140px] md:w-[160px] relative flex items-center gap-3 p-3 bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-white/30 shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#2563eb] hover:-translate-y-1 hover:translate-x-1 hover:shadow-none dark:hover:shadow-none transition-[transform,box-shadow] cursor-crosshair shrink-0"
             >
               <div className="text-black dark:text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {tech.icon}
@@ -94,7 +94,7 @@ export default function TechStackGrid() {
         <div className="absolute left-0 top-0 h-[calc(100%-16px)] flex items-center pointer-events-none pl-2 bg-gradient-to-r from-white via-white/90 dark:from-[#0a0a0a] dark:via-[#0a0a0a]/90 to-transparent pr-12 transition-colors z-20">
           <button 
             onClick={scrollLeft}
-            className="pointer-events-auto bg-blue-100 dark:bg-blue-900/60 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] hover:shadow-[4px_4px_0px_#000] dark:hover:shadow-[4px_4px_0px_#2563eb] active:shadow-[0px_0px_0px_#000] dark:active:shadow-[0px_0px_0px_#2563eb] active:translate-x-[2px] active:translate-y-[2px] px-3 py-2 flex items-center justify-center transition-all cursor-pointer opacity-0 group-hover:opacity-100 focus:opacity-100"
+            className="pointer-events-auto bg-blue-100 dark:bg-blue-900/60 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] hover:shadow-[4px_4px_0px_#000] dark:hover:shadow-[4px_4px_0px_#2563eb] active:shadow-[0px_0px_0px_#000] dark:active:shadow-[0px_0px_0px_#2563eb] active:translate-x-[2px] active:translate-y-[2px] px-3 py-2 flex items-center justify-center transition-[opacity,box-shadow,transform] cursor-pointer opacity-0 group-hover:opacity-100 focus:opacity-100"
             aria-label="Scroll left"
           >
             <span className="font-[family-name:var(--font-mono)] font-black text-sm text-black dark:text-blue-300">
@@ -108,7 +108,7 @@ export default function TechStackGrid() {
         <div className="absolute right-0 top-0 h-[calc(100%-16px)] flex items-center pointer-events-none pr-2 bg-gradient-to-l from-white via-white/90 dark:from-[#0a0a0a] dark:via-[#0a0a0a]/90 to-transparent pl-12 transition-colors z-20">
           <button 
             onClick={scrollRight}
-            className="pointer-events-auto bg-blue-100 dark:bg-blue-900/60 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] hover:shadow-[4px_4px_0px_#000] dark:hover:shadow-[4px_4px_0px_#2563eb] active:shadow-[0px_0px_0px_#000] dark:active:shadow-[0px_0px_0px_#2563eb] active:translate-x-[2px] active:translate-y-[2px] px-3 py-2 flex items-center justify-center transition-all cursor-pointer opacity-0 group-hover:opacity-100 focus:opacity-100 animate-pulse hover:animate-none"
+            className="pointer-events-auto bg-blue-100 dark:bg-blue-900/60 border-2 border-black dark:border-blue-500 shadow-[2px_2px_0px_#000] dark:shadow-[2px_2px_0px_#2563eb] hover:shadow-[4px_4px_0px_#000] dark:hover:shadow-[4px_4px_0px_#2563eb] active:shadow-[0px_0px_0px_#000] dark:active:shadow-[0px_0px_0px_#2563eb] active:translate-x-[2px] active:translate-y-[2px] px-3 py-2 flex items-center justify-center transition-[opacity,box-shadow,transform] cursor-pointer opacity-0 group-hover:opacity-100 focus:opacity-100 animate-pulse hover:animate-none"
             aria-label="Scroll right"
           >
             <span className="font-[family-name:var(--font-mono)] font-black text-sm text-black dark:text-blue-300">
