@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SystemAccessBadge from "@/components/SystemAccessBadge";
+import TerminalWindow from "@/components/TerminalWindow";
 import TechStackGrid from "@/components/TechStackGrid";
 import AnimatedHeroText from "@/components/AnimatedHeroText";
 import { ThemeToggle } from "@/components/CurtainThemeToggle";
@@ -91,6 +92,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <TerminalWindow />
 
       <AboutSection />
 
