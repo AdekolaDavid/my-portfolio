@@ -32,7 +32,7 @@ export const projects: Project[] = [
     id: "company-tickets",
     title: "Company Tickets",
     description:
-      "A full-stack IT support ticketing system built for Trucksoft Limited. Features a real-time admin portal, role-based access control, and live dashboard metrics for rapid issue resolution.",
+      "Trucksoft's IT requests were scattered across WhatsApp threads with no shared view of what was open, urgent, or forgotten. I built a ticketing system with a public submission form, a status lookup page so requesters aren't left guessing, and an admin portal behind Supabase-authenticated middleware — with live updates over Supabase Realtime, priority filtering, and inline status changes that reflect instantly for every admin watching. No refresh button anywhere; if a ticket moves, everyone sees it move.",
     image: {
       src: "/projects/tickets.png",
       alt: "Company Tickets Dashboard",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     id: "stockr",
     title: "StockR",
     description:
-      "An internal inventory management web app for a logistics and telematics company. Allows the support team to track physical IT devices and SIM cards—managing stock levels, assignments, and history across operations.",
+      "Trucksoft (a Nigerian trucking and telematics company) had SIM cards, tracking devices, and maintenance jobs moving between trucks, offices, and staff with no system of record. StockR covers telematics and office device inventory, bulk SIM imports from CSV with per-row validation, installation and repair job logging, maintenance reports, and a truck-level view that merges spend, installs, and repairs into one timeline. It ships as a role-gated PWA — admins and viewers see different things, and it installs and updates like a native app for staff on the floor.",
     image: {
       src: "/projects/stockr.png",
       alt: "StockR Inventory UI",

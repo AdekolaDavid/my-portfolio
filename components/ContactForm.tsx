@@ -106,7 +106,7 @@ export default function ContactForm() {
 
         {/* NEW: Inline Terminal Status Output */}
         {status.type !== "idle" && (
-          <div className={`mt-2 p-4 border-2 font-[family-name:var(--font-mono)] text-xs font-bold uppercase tracking-widest animate-pulse ${
+          <div className={`mt-2 p-4 border-2 font-[family-name:var(--font-mono)] text-xs font-bold uppercase tracking-widest status-message ${
             status.type === "success" 
               ? "bg-green-100 dark:bg-green-900/30 border-green-500 text-green-700 dark:text-green-400" 
               : "bg-red-100 dark:bg-red-900/30 border-red-500 text-red-700 dark:text-red-400"

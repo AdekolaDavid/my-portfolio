@@ -29,7 +29,7 @@ export default function ContactSection() {
       
       <div className="mt-24 pt-8 border-t border-black dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 transition-colors">
         <div className="text-[10px] tracking-widest text-slate-600 uppercase font-bold font-[family-name:var(--font-mono)] flex items-center gap-2">
-          <div className="w-2 h-2 border border-black dark:border-transparent bg-blue-500 animate-pulse"></div>
+          <div className="w-2 h-2 border border-black dark:border-transparent bg-blue-500"></div>
           SYS.ONLINE // {new Date().getFullYear()}
         </div>
         <div className="text-[10px] tracking-widest text-slate-600 uppercase font-bold font-[family-name:var(--font-mono)]">

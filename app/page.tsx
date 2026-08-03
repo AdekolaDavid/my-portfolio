@@ -35,7 +35,7 @@ export default function Home() {
 
             <div className="mt-8 relative z-10">
               <div className="inline-flex items-center gap-3 px-3 py-1.5 mb-8 border-2 border-black dark:border-blue-500 bg-blue-100 dark:bg-blue-900/30 text-black dark:text-blue-400 font-[family-name:var(--font-mono)] font-bold text-xs shadow-[4px_4px_0px_#000] dark:shadow-[4px_4px_0px_#2563eb] transition-[background-color,border-color,box-shadow] duration-500">
-                <span className="w-2 h-2 border border-black dark:border-transparent bg-blue-500 animate-pulse"></span>
+                <span className="w-2 h-2 border border-black dark:border-transparent bg-blue-500"></span>
                 STATUS: AVAILABLE FOR WORK
               </div>
 
