@@ -27,7 +27,7 @@ export default function ContactForm() {
       } else {
         setStatus({ type: "error", msg: "Something went wrong. Please try again." });
       }
-    } catch {
+    } catch (error) {
       setStatus({ type: "error", msg: "Network error — check your connection and try again." });
     } finally {
       setIsSubmitting(false);
